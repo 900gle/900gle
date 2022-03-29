@@ -1,0 +1,26 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-request-size: 10MB
+      max-file-size: 200MB
+  profiles:
+    active: local
+  messages:
+    basename: i18n/exception
+    encoding: UTF-8
+#  jpa:
+#    hibernate:
+#      use-new-id-generator-mappings: false
+#      ddl-auto: update
+management:
+  health:
+    defaults:
+      enabled: false
+
+
+file:
+  upload_dir: ./images
+
+

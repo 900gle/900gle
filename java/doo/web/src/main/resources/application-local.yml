@@ -1,0 +1,26 @@
+logging:
+  level:
+    root: warn
+    com.etoos.imagesearch: debug
+  #path: /home/ec2-user/api/log
+  file:
+    max-history: 7
+spring:
+  profiles: local
+server:
+  port: 8888
+elasticsearch:
+  host: localhost
+  port: 9200
+  id: elastic
+  password: dlengus
+
+file:
+  upload_dir: ./images
+host:
+  search: http://localhost:8080
+  indexer: http://localhost:8081
+
+
+
+

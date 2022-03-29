@@ -1,0 +1,18 @@
+#scroll-list .products-rank {
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+#scroll-list {
+  font-size: 11pt;
+}
+
+#scroll-list a:link, #scroll-list a:visited {
+  text-decoration: none;
+  font-size: 12pt;
+  color: #0c4128;
+}
+
+#scroll-list .products {
+  margin-top: 10px;
+}
