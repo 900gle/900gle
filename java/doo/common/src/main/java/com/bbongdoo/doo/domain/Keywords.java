@@ -27,8 +27,8 @@ public class Keywords {
     @Column(length = 200, nullable = false, unique = true)
     private String keyword;
 
-    @Column(length = 50, nullable = true)
-    private String use_yn;
+    @Column(length = 1, nullable = false, name = "use_yn")
+    private String useYn;
 
     @Builder
     public Keywords(
@@ -36,6 +36,6 @@ public class Keywords {
             String use
     ) {
         this.keyword = keyword;
-        this.use_yn = use;
+        this.useYn = use;
     }
 }

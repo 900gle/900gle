@@ -22,9 +22,7 @@ public class GoodsRestController {
     @ApiOperation(value = "수집", notes = "데이타 크롤링")
     @CrossOrigin("*")
     @PostMapping("goods")
-    public void getData(
-            @ApiParam(value = "keyword") @RequestParam(value = "keyword", defaultValue = "", required = true) String keyword
-    ) {
-        goodsService.getData(CrawlerDto.create(keyword));
+    public void getData() {
+        goodsService.getData();
     }
 }
