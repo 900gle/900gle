@@ -1,12 +1,12 @@
-logging:
-  level:
-    root: warn
-    com.etoos.imagesearch: debug
-  #path: /home/ec2-user/api/log
-  file:
-    max-history: 7
+
+
 spring:
   profiles: local
+  datasource:
+    url: jdbc:mysql://localhost:3306/shop
+    username: ldh
+    password: doo
+    driver-class-name: com.mysql.cj.jdbc.Driver
 server:
   port: 8888
 elasticsearch:

@@ -14,11 +14,11 @@ public class AdminController {
     @GetMapping("admin")
     public String main(Model model){
 
-        Map<String, String> dataMap = new HashMap<>();
-        dataMap.put("api", "http://localhost:8080");
-        model.addAllAttributes(dataMap);
+//        Map<String, String> dataMap = new HashMap<>();
+//        dataMap.put("api", "http://localhost:8080");
+//        model.addAllAttributes(dataMap);
 
-        return "admin/index";
+        return "lecture";
     }
 
 
