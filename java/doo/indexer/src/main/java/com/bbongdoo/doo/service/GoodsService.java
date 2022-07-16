@@ -59,6 +59,9 @@ public class GoodsService {
 
     public void staticIndex() {
 
+
+
+
         String indexName = PREFIX+"-" + LocalDateTime.now().format(DateTimeFormatter.ISO_DATE).toString();
 
         try {

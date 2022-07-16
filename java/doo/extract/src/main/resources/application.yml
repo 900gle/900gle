@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: local
+  batch:
+    job:
+      names: ${job.name:NONE}
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: false
+      ddl-auto: none
+
+management:
+  health:
+    elasticsearch:
+      enabled: false
+---
+spring:
+  profiles: local
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://localhost:3306/shop
+      username: ldh
+      password: doo
+      driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8085
+---
+
+spring:
+  profiles: prod
+  datasource:
+    hikari:
+      jdbc-url: jdbc:mysql://52.198.97.252:3306/shop
+      username: ldh
+      password: doo
+      driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8085
+---
