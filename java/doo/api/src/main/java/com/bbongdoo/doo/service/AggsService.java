@@ -12,6 +12,8 @@ import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.aggregations.Aggregations;
+import org.elasticsearch.search.aggregations.bucket.nested.Nested;
+import org.elasticsearch.search.aggregations.bucket.nested.NestedAggregationBuilder;
 import org.elasticsearch.search.aggregations.bucket.range.Range;
 import org.elasticsearch.search.aggregations.bucket.range.RangeAggregationBuilder;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms;
@@ -57,6 +59,10 @@ public class AggsService {
                     .addRange(4, 5)
                     .addUnboundedFrom(5);
             searchSourceBuilder.aggregation(grade);
+            NestedAggregationBuilder reseller = new NestedAggregationBuilder("RESELLERS", "resellers");
+                reseller.subAggregation(new TermsAggregationBuilder("RESELLERS_RESELLER", null).field("resellers.reseller"));
+            searchSourceBuilder.aggregation(reseller);
+
             searchRequest.source(searchSourceBuilder);
 
             System.out.println(searchRequest.source());
@@ -81,6 +87,13 @@ public class AggsService {
                 for (Range.Bucket bucketGrade : gradeAggs.getBuckets()) {
                     returnAggs.add(new ReturnAggs(bucketGrade.getKey().toString(), bucketGrade.getDocCount()));
                 }
+
+                Nested resellersAggs=aggregations.get("RESELLERS");
+                Terms resellerAggs=resellersAggs.getAggregations().get("RESELLERS_RESELLER");
+                for (Terms.Bucket bucketReseller : resellerAggs.getBuckets()) {
+                    returnAggs.add(new ReturnAggs(bucketReseller.getKey().toString(), bucketReseller.getDocCount()));
+                }
+
             }
 
             return responseService.getListResult(returnAggs);
