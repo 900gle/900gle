@@ -33,49 +33,25 @@ public class GoodsService {
     public void getData(String type) {
 
         List<Keywords> keywords = keywordsService.getData();
-
-
         keywords.stream().forEach(obj -> {
-
                     try {
                         int i = 0;
                         while (true) {
-
-
                             Thread.sleep(2000); //1초 대기
-
-
                             String listUrl = "https://search.shopping.naver.com/search/all?frm=NVSHATC&origQuery=" + obj.getKeyword() + "&pagingIndex=" + i + "&pagingSize=40&productSet=total&query=" + obj.getKeyword() + "&sort=rel&timestamp=&viewType=list";
-
-//                            System.out.println(listUrl);
-
                             Document listDocument = Jsoup.connect(listUrl)
                                     .timeout(9000)
                                     .get();
-
-//                                                        System.out.println(listDocument);
-//#__next > div > div.style_container__UxP6u > div.style_inner__i4gKy > div.style_content_wrap__Cdqnl > div.style_content__xWg5l > ul > div > div:nth-child(24) > li > div > div.basicList_img_area__AdRY_ > div > a > img
-
                             Elements list = listDocument.select("li.basicList_item__0T9JD");
-
-//                            System.out.println(list.size());
                             list.stream().forEach(element -> {
-
                                 try {
-
                                     Elements title = element.select("div.basicList_title__VfX3c>a");
                                     Elements price = element.select("strong.basicList_price__euNoD>span>span.price_num__S2p_v");
                                     Elements category = element.select("div.basicList_depth__SbZWF span");
                                     List<String> categoryLists = category.stream().map(x -> x.text()).collect(Collectors.toList());
 
                                     Elements image = element.select("a.thumbnail_thumb__Bxb6Z > img");
-
-                                    System.out.println(image);
-
-                                    System.out.println("----------------");
-
                                     Thread.sleep(1000);
-                                    System.out.println(image.attr("src"));
 
                                     goodsRepository.save(GoodsText.builder()
                                             .keyword(obj.getKeyword())
@@ -100,20 +76,14 @@ public class GoodsService {
                                 } catch (IOException e) {
                                     e.printStackTrace();
                                 } catch (InterruptedException e) {
-
-
+                                    e.printStackTrace();
                                 }
-
-
                             });
-
-
                             if (i > CRAWLING_LIMIT) {
                                 break;
                             }
                             i++;
                         }
-//
                     } catch (IOException e) {
                         e.printStackTrace();
                     } catch (InterruptedException i) {

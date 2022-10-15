@@ -11,6 +11,4 @@ public interface ProductsRepository extends JpaRepository<Products, Long> {
     List<Products> findAllByUpdatedTimeLessThan(@Param("updatedTime") LocalDateTime updatedTime);
     List<Products> findAllByUpdatedTimeGreaterThan(@Param("updatedTime") LocalDateTime updatedTime);
 
-
-
 }

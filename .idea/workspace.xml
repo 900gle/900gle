@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8f4dc8b-cf89-49ad-809a-1a5cbdfde21f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/java/doo/common/src/main/java/com/bbongdoo/doo/domain/GoodsText.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/doo/common/src/main/java/com/bbongdoo/doo/domain/GoodsTextRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java/doo/crawler/src/main/java/com/bbongdoo/doo/service/CrawlerSeleniumService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/doo/crawler/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/crawler/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/doo/crawler/src/main/java/com/bbongdoo/doo/runner/AppCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/crawler/src/main/java/com/bbongdoo/doo/runner/AppCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/doo/crawler/src/main/java/com/bbongdoo/doo/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/crawler/src/main/java/com/bbongdoo/doo/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/IndexFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/IndexFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/cron/GoodsCron.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/cron/GoodsCron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/service/v2/GoodsService.java" beforeDir="false" />
-    </list>
+    <list default="true" id="a8f4dc8b-cf89-49ad-809a-1a5cbdfde21f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +37,7 @@
       <updated>1648299445731</updated>
       <workItem from="1648299447339" duration="19000" />
       <workItem from="1665668382151" duration="53000" />
+      <workItem from="1665824734311" duration="170000" />
     </task>
     <servers />
   </component>

@@ -214,8 +214,6 @@ public class IndexGoodsApi {
                     builder.field("format", "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_hour_minute_second_millis||strict_date_optional_time");
                 }
                 builder.endObject();
-
-
             }
             builder.endObject();
         }

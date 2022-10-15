@@ -1,12 +1,9 @@
 package com.bbongdoo.doo.service;
 
 
-import com.bbongdoo.doo.apis.IndexApi;
 import com.bbongdoo.doo.apis.IndexGoodsApi;
 import com.bbongdoo.doo.domain.Goods;
 import com.bbongdoo.doo.domain.GoodsRepository;
-import com.bbongdoo.doo.domain.Products;
-import com.bbongdoo.doo.domain.ProductsRepository;
 import com.bbongdoo.doo.utils.ParseVector;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -59,13 +56,9 @@ public class GoodsService {
 
     public void staticIndex() {
 
-
-
-
         String indexName = PREFIX+"-" + LocalDateTime.now().format(DateTimeFormatter.ISO_DATE).toString();
 
         try {
-
 
             GetIndexRequest requestGetIndex = new GetIndexRequest(indexName);
             boolean existsIndex = client.indices().exists(requestGetIndex, RequestOptions.DEFAULT);
@@ -99,7 +92,6 @@ public class GoodsService {
                             XContentBuilder builder = XContentFactory.jsonBuilder();
                             builder.startObject();
                             {
-
                                 builder.field("id", x.getId());
                                 builder.field("keyword", x.getKeyword());
                                 builder.field("name", x.getName());
@@ -142,9 +134,6 @@ public class GoodsService {
             ForceMergeResponse forceMergeResponse = client.indices().forcemerge(forceMergeRequest, RequestOptions.DEFAULT);
             IndicesAliasesRequest indicesAliasesRequest = new IndicesAliasesRequest();
 
-            System.out.println("old name : " + oldIndexName);
-            System.out.println("index name : " + indexName);
-
             if (!StringUtils.isEmpty(oldIndexName) && !indexName.equals(oldIndexName)) {
 
                 IndicesAliasesRequest.AliasActions aliasActionsAdd = new IndicesAliasesRequest.AliasActions(IndicesAliasesRequest.AliasActions.Type.ADD)
@@ -184,20 +173,14 @@ public class GoodsService {
         searchRequest.indices(PREFIX);
 
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-
-
         BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
-
 //        boolQueryBuilder.must(QueryBuilders.termQuery("name", searchWord));
 //        boolQueryBuilder.should(QueryBuilders.matchQuery("name", searchWord));
-
-
         searchSourceBuilder.query(boolQueryBuilder);
 
         searchSourceBuilder.size(1);
         searchSourceBuilder.sort("updated_time", SortOrder.DESC);
         searchRequest.source(searchSourceBuilder);
-
 
         try {
             SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
@@ -205,35 +188,17 @@ public class GoodsService {
             List<Map<String, Object>> returnValue = new ArrayList<>();
             SearchHit[] results = searchResponse.getHits().getHits();
 
-
             Arrays.stream(results).forEach(hit -> {
                 Map<String, Object> result = hit.getSourceAsMap();
-
-
-//
-//                System.out.println(result.get("name"));
-//                System.out.println(result.get("id"));
-                System.out.println(result.get("updated_time"));
-
                 updatedTime = LocalDateTime.parse(result.get("updated_time").toString(), DateTimeFormatter.ISO_OFFSET_DATE_TIME);
-
-
             });
 
-
             List<Goods> goodsList = null;
-
             if (updatedTime == null) {
-
-
                 goodsList = goodsRepository.findAll();
-
-
             } else {
                 goodsList = goodsRepository.findAllByUpdatedTimeGreaterThan(updatedTime);
-
             }
-
 
             if (goodsList.size() > 0) {
                 BulkRequest bulkRequest = new BulkRequest();
@@ -278,30 +243,17 @@ public class GoodsService {
 
                 BulkResponse bulkResponse = client.bulk(bulkRequest, RequestOptions.DEFAULT);
 
-
-                System.out.println(bulkResponse.buildFailureMessage());
-
                 FlushRequest flushRequest = new FlushRequest(PREFIX);
                 FlushResponse flushResponse = client.indices().flush(flushRequest, RequestOptions.DEFAULT);
                 ForceMergeRequest forceMergeRequest = new ForceMergeRequest(PREFIX);
                 ForceMergeResponse forceMergeResponse = client.indices().forcemerge(forceMergeRequest, RequestOptions.DEFAULT);
                 IndicesAliasesRequest indicesAliasesRequest = new IndicesAliasesRequest();
 
-
-//                returnValue.add(result);
-
-
             } else {
-
                 System.out.println("end");
-
             }
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 }

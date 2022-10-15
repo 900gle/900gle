@@ -34,13 +34,6 @@ public class AppCommand implements Callable<Integer>, IExitCodeExceptionMapper {
 
     @Override
     public Integer call() throws Exception {
-
-//        if (!type.equals("NAVER")) {
-//            System.out.println("NAVER 가 아님");
-//            throw new IOException();
-//        }
-
-
         switch (type) {
             case "T":
                 goodsService.getData(type);
@@ -50,7 +43,6 @@ public class AppCommand implements Callable<Integer>, IExitCodeExceptionMapper {
                 break;
             default:
         }
-
         return ExitCode.OK;
     }
 

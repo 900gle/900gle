@@ -8,6 +8,5 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor(staticName = "create")
 public class CrawlerDto {
-
     private String keyword;
 }

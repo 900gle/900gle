@@ -84,20 +84,14 @@ public class CrawlerSeleniumService {
             muchoCheese.stream().forEach(e -> {
 
                 String imageUrl = "";
-
-//                System.out.println(e.findElement(By.cssSelector("a.thumbnail_thumb__Bxb6Z > img")).isEnabled());
-
-
                 if (e.findElement(By.cssSelector("a.thumbnail_thumb__Bxb6Z > img")).isEnabled()) {
                     imageUrl = e.findElement(By.cssSelector("a.thumbnail_thumb__Bxb6Z > img")).getAttribute("src");
                 }
-
 
                 String title = e.findElement(By.cssSelector("div.basicList_title__VfX3c>a")).getText();
                 String price = e.findElement(By.cssSelector("strong.basicList_price__euNoD>span>span.price_num__S2p_v")).getText();
                 List<WebElement> categorys = e.findElements(By.cssSelector("div.basicList_depth__SbZWF span"));
                 List<String> categoryLists = categorys.stream().map(x -> x.getText()).collect(Collectors.toList());
-
 
                 try {
                     goodsRepository.save(GoodsText.builder()
