@@ -42,7 +42,7 @@ common
 crawler  
 indexer  
 libs  
-manage
+manage  
 web
 >
 
