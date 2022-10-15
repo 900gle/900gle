@@ -1,0 +1,13 @@
+elasticsearch
+numpy
+tensorflow
+tensorflow-hub
+tensorflow_text
+kss
+regex
+flask
+flask_restful
+Api
+Resource
+matplotlib
+pandas

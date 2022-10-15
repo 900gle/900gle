@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="plugin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/plugin/doo-plugin-7.15.1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/plugin/kr-danalyzer-7.15.1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/plugin/payload-score-0.1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

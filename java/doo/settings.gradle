@@ -1,0 +1,2 @@
+rootProject.name = 'doo'
+include 'common', 'web', 'api', 'indexer', 'crawler', 'extract', 'manage'

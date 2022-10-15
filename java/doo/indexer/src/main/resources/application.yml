@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+  basename: i18n/exception
+  encoding: UTF-8
+batch:
+  job:
+    names: ${job.name:NONE}
+jpa:
+  hibernate:
+    use-new-id-generator-mappings: false
+    ddl-auto: none
+management:
+  health:
+    elasticsearch:
+      enabled: false

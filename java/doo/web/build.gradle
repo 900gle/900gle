@@ -1,0 +1,9 @@
+
+def axiosVersion = '0.20.0'
+
+dependencies {
+//    compile project(':common')
+    compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+    implementation('nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect')
+    compile group: 'org.webjars.npm', name: 'axios', version: axiosVersion
+}
