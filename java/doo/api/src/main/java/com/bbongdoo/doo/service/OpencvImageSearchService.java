@@ -3,7 +3,7 @@ package com.bbongdoo.doo.service;
 import com.bbongdoo.doo.component.ImageToVectorOpenCV;
 import com.bbongdoo.doo.dto.VectorDTO;
 import com.bbongdoo.doo.model.response.CommonResult;
-import com.etoos.imagesearch.dto.ImageSearchDTO;
+import com.bbongdoo.doo.dto.ImageSearchDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.search.SearchRequest;

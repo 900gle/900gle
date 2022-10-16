@@ -1,5 +1,6 @@
 package com.bbongdoo.doo.controller;
 
+import com.bbongdoo.doo.dto.ImageSearchDTO;
 import com.bbongdoo.doo.model.response.CommonResult;
 import com.bbongdoo.doo.service.OpencvImageSearchService;
 import io.swagger.annotations.Api;
@@ -26,7 +27,7 @@ public class ImagesRestController {
             @ApiParam(value = "파일") @RequestParam(value = "file", required = true) @Validated final MultipartFile file
     ) {
 
-        return opencvImageSearchService.getImages(com.etoos.imagesearch.dto.ImageSearchDTO.builder().file(file).build());
+        return opencvImageSearchService.getImages(ImageSearchDTO.builder().file(file).build());
     }
 
 }
