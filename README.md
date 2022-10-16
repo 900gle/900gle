@@ -1,10 +1,11 @@
 # 900gle shopping (phase2)
 [![Elastic Stack version](https://img.shields.io/badge/Elasticsearch-7.15.1-00bfb3?style=flat&logo=elastic-stack)]()
 [![Elastic Stack version](https://img.shields.io/badge/kibana-7.15.1-00bfb3?style=flat&logo=elastic-stack)]()
-[![Elastic Stack version](https://img.shields.io/badge/logstash-7.15.1-00bfb3?style=flat&logo=elastic-stack)]() 
+[![Elastic Stack version](https://img.shields.io/badge/logstash-7.15.1-00bfb3?style=flat&logo=elastic-stack)]()
 
 ## What is 900gle shopping?
-백터의 유사도 검색을 활용한 쇼핑플랫폼 개인프로젝트
+백터의 유사도 검색을 활용한 쇼핑플랫폼 개인프로젝트  
+[개발잡부](https://ldh-6019.tistory.com)의 블로그의 내용을 구현 
 
 #### 개발환경
 * macOS
@@ -57,12 +58,23 @@ web
 1. docker : Elastic stack 관련 DockerFile 및 플러그인 파일 
 * docker
     * elastic-stack
-        * elasticsearch
+        * [elasticsearch](https://ldh-6019.tistory.com/m/category/ElasticStack/Elasticsearch)
         * extensions
-        * kibana
-        * logstash
- 
-        
+        * [kibana](https://ldh-6019.tistory.com/m/category/ElasticStack/Kibana)
+        * logstash   
+
+
+#### Elasticsearch pluin
+>analysis-nori - nori 한글형태소분석 플러그인   
+doo-plugin-7.15.1.zip - 900gle search plugin   
+kr-danalyzer-7.15.1.zip - 900gle token filter    
+payload-score-0.1.zip - payload score plugin 
+#### Elasticsearch dictionary
+>{ES_HOME}/config/stopFilter.txt - 불용어 사전  
+{ES_HOME}/config/synonymsFilter.txt - 동의어 사전  
+{ES_HOME}/config/user_dictionary.txt - 사용자정의 사전
+
+
  Usage     
  ```
 # docker-compose.yml 파일이 위한 경로로 이동 

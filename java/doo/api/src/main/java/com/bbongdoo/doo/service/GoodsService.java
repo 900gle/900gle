@@ -80,7 +80,6 @@ public class GoodsService {
             searchSourceBuilder.size(8);
             searchRequest.source(searchSourceBuilder);
 
-            System.out.println(searchRequest.source());
             SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
 
             List<Map<String, Object>> returnValue = new ArrayList<>();

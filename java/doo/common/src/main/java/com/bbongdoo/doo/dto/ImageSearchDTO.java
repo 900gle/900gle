@@ -1,4 +1,4 @@
-package com.etoos.imagesearch.dto;
+package com.bbongdoo.doo.dto;
 
 import lombok.Builder;
 import lombok.Getter;

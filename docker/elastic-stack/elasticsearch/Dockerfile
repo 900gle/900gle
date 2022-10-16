@@ -16,4 +16,4 @@ COPY plugin/payload-score-0.1.zip plugin/payload-score-0.1.zip
 RUN elasticsearch-plugin install analysis-nori
 RUN elasticsearch-plugin install file:///usr/share/elasticsearch/plugin/doo-plugin-7.15.1.zip
 RUN elasticsearch-plugin install file:///usr/share/elasticsearch/plugin/kr-danalyzer-7.15.1.zip
-RUN #elasticsearch-plugin install file:///usr/share/elasticsearch/plugin/payload-score-0.1.zip
+RUN elasticsearch-plugin install file:///usr/share/elasticsearch/plugin/payload-score-0.1.zip
