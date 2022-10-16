@@ -95,6 +95,10 @@ $docker exec -id <NAME> /bin/bash
 #container 정지/삭제  
 $ docker compose stop
 $ docker compose down
+
+#image 확인/삭제
+$ docker images
+$ docker rmi <IMAGE_ID>
 ``` 
 
 
@@ -104,7 +108,7 @@ $ docker compose down
         * [crawler - 검색 API](https://ldh-6019.tistory.com/category/900gle%20shopping/api) 
         * common - 공통파일        
         * [crawler - 웹사이트의 상품정보를 크롤링](https://ldh-6019.tistory.com/category/900gle%20shopping/crawler)    
-        * extract - 크롤링 후 데이터 파일 생성 (진행중)
+        * extract - 크롤링 후 데이터 파일 생성
         * [indexer - DB의 내용을 ES에 색인](https://ldh-6019.tistory.com/category/900gle%20shopping/indexer) 
         * [libs - OpenCV lib 파일](https://ldh-6019.tistory.com/category/OpneCV)
         * [manage - Admin 에서 사용될 API (크롤링키워드관리)](https://ldh-6019.tistory.com/category/900gle%20shopping/manage)
