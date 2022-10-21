@@ -58,11 +58,11 @@ web
 1. docker : Elastic stack 관련 DockerFile 및 플러그인 파일 
 * docker
     * elastic-stack
-        * [elasticsearch](https://ldh-6019.tistory.com/m/category/ElasticStack/Elasticsearch)
+        * [elasticsearch](https://ldh-6019.tistory.com/category/ElasticStack/Elasticsearch)
         * extensions
-        * [kibana](https://ldh-6019.tistory.com/m/category/ElasticStack/Kibana)
-        * logstash   
-
+        * [kibana](https://ldh-6019.tistory.com/category/ElasticStack/Kibana)
+        * logstash
+    * [kafka](https://ldh-6019.tistory.com/category/Kafka)
 
 #### Elasticsearch pluin
 >analysis-nori - nori 한글형태소분석 플러그인   
@@ -100,6 +100,11 @@ $ docker compose down
 $ docker images
 $ docker rmi <IMAGE_ID>
 ``` 
+
+kafka Usage
+```shell
+docker compose -f kafka-full.yml up -d --build
+```
 
 
 1. java : 900gle 프로젝트  
