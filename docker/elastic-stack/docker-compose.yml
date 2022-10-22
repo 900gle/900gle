@@ -28,6 +28,7 @@ services:
       - elk
 
 #  logstash:
+#    container_name: 900gle_logstash
 #    build:
 #      context: logstash/
 #      args:
@@ -43,11 +44,11 @@ services:
 #        read_only: true
 #    ports:
 #      - "5044:5044"
-#      - "5000:5000/tcp"
-#      - "5000:5000/udp"
+#      - "6000:6000/tcp"
+#      - "6000:6000/udp"
 #      - "9600:9600"
 #    environment:
-#      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+#      LS_JAVA_OPTS: "-Xmx512m -Xms512m"
 #    networks:
 #      - elk
 #    depends_on:
