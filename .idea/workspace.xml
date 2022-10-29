@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f4dc8b-cf89-49ad-809a-1a5cbdfde21f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/main/java/com/bbongdoo/doo/ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/main/java/com/bbongdoo/doo/cron/GoodsCron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/main/java/com/bbongdoo/doo/service/ConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/main/java/com/bbongdoo/doo/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/consumer/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/src/main/java/com/bbongdoo/doo/ProducerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/src/main/java/com/bbongdoo/doo/cron/GoodsCron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/src/main/java/com/bbongdoo/doo/service/ProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/src/main/java/com/bbongdoo/doo/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/src/main/resources/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/src/main/resources/application-local.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/producer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/elastic-stack/logstash/pipeline/logstash.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/elastic-stack/logstash/pipeline/logstash.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

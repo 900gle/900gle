@@ -98,6 +98,18 @@ project(':manage') {
     }
 }
 
+project(':producer') {
+    dependencies {
+        compile project(':common')
+    }
+}
+
+project(':manage') {
+    dependencies {
+        compile project(':common')
+    }
+}
+
 //plugins {
 //	id 'org.springframework.boot' version '2.4.5'
 //	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
