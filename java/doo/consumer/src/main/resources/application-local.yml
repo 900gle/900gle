@@ -13,3 +13,7 @@ elasticsearch:
   port: 9200
   id: elastic
   password: dlengus
+
+
+
+  
