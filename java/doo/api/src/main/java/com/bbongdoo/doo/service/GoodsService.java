@@ -2,6 +2,7 @@ package com.bbongdoo.doo.service;
 
 import com.bbongdoo.doo.component.TextEmbedding;
 import com.bbongdoo.doo.dto.TextEmbeddingDTO;
+import com.bbongdoo.doo.info.HostUrl;
 import com.bbongdoo.doo.model.response.CommonResult;
 import com.google.common.base.Functions;
 import lombok.RequiredArgsConstructor;
@@ -45,7 +46,7 @@ public class GoodsService {
 
             Vector<Double> vectors = TextEmbedding.getVector(
                     TextEmbeddingDTO.builder()
-                            .tensorApiUrl("http://localhost:5000/vectors")
+                            .tensorApiUrl(HostUrl.EMBEDDING.getUrl())
                             .keyword(searchWord).build()
             );
 

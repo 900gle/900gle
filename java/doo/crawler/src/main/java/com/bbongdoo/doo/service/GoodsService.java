@@ -7,6 +7,7 @@ import com.bbongdoo.doo.domain.GoodsText;
 import com.bbongdoo.doo.domain.GoodsTextRepository;
 import com.bbongdoo.doo.domain.Keywords;
 import com.bbongdoo.doo.dto.TextEmbeddingDTO;
+import com.bbongdoo.doo.info.HostUrl;
 import lombok.RequiredArgsConstructor;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -38,7 +39,7 @@ public class GoodsService {
                         int i = 0;
                         while (true) {
                             Thread.sleep(2000); //1초 대기
-                            String listUrl = "https://search.shopping.naver.com/search/all?frm=NVSHATC&origQuery=" + obj.getKeyword() + "&pagingIndex=" + i + "&pagingSize=40&productSet=total&query=" + obj.getKeyword() + "&sort=rel&timestamp=&viewType=list";
+                            String listUrl = HostUrl.NAVER.getUrl() + "?frm=NVSHATC&origQuery=" + obj.getKeyword() + "&pagingIndex=" + i + "&pagingSize=40&productSet=total&query=" + obj.getKeyword() + "&sort=rel&timestamp=&viewType=list";
                             Document listDocument = Jsoup.connect(listUrl)
                                     .timeout(9000)
                                     .get();
@@ -64,7 +65,7 @@ public class GoodsService {
                                             .category4(categoryLists.size() < 4 ? "" : categoryLists.get(3))
                                             .category5(categoryLists.size() < 5 ? "" : categoryLists.get(4))
                                             .image(image.attr("src"))
-                                            .featureVector(TextEmbedding.getVector(TextEmbeddingDTO.builder().tensorApiUrl("http://localhost:5000/vectors").keyword(title.text()).build()).toString())
+                                            .featureVector(TextEmbedding.getVector(TextEmbeddingDTO.builder().tensorApiUrl(HostUrl.EMBEDDING.getUrl()).keyword(title.text()).build()).toString())
                                             .popular(1)
                                             .weight(0.1f)
                                             .type("C")
@@ -90,6 +91,7 @@ public class GoodsService {
 
                     }
 //
+
                     keywordsService.putData(obj);
                 }
         );
