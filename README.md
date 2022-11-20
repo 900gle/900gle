@@ -23,8 +23,7 @@
 ---
 
 ## - Architecture - [phase2](https://ldh-6019.tistory.com/132?category=1046444)
-[![phase4](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fc5okLp%2FbtrEHDeKNX8%2FbuAEKahavjZhlkl5VvyafK%2Fimg.png
-)](https://ldh-6019.tistory.com/132?category=1046444)
+[![phase4](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F5rFRL%2FbtrPp4ZbqvZ%2FnBTn1kdsvTzye38Lw2CdIk%2Fimg.png)](https://ldh-6019.tistory.com/132?category=1046444)
 
 ## - Project directory structure
 
@@ -117,6 +116,8 @@ docker compose -f kafka-full.yml up -d --build
         * [indexer - DB의 내용을 ES에 색인](https://ldh-6019.tistory.com/category/900gle%20shopping/indexer) 
         * [libs - OpenCV lib 파일](https://ldh-6019.tistory.com/category/OpneCV)
         * [manage - Admin 에서 사용될 API (크롤링키워드관리)](https://ldh-6019.tistory.com/category/900gle%20shopping/manage)
+        * [producer - Kafka producer (카프카 정보 전송)](https://ldh-6019.tistory.com/category/900gle%20shopping/producer)
+        * [consumer - Kafka consumer (카프카 정보 소비)](https://ldh-6019.tistory.com/category/900gle%20shopping/consumer)
         * [web - 900gle shopping 웹사이트](https://ldh-6019.tistory.com/category/900gle%20shopping/web)
      
  
