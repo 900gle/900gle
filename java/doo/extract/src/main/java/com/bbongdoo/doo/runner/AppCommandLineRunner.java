@@ -19,18 +19,10 @@ public class AppCommandLineRunner implements CommandLineRunner, ExitCodeGenerato
         this.factory = factory;
     }
 
-//    public final DynamicIndex dynamicIndex;
-
-
     @Override
     public void run(String... args) throws Exception {
-
         exitCode = new CommandLine(appCommand, factory).setExitCodeExceptionMapper(appCommand).execute(args);
-
-
-//        dynamicIndex.startDynamic();
     }
-
 
     @Override
     public int getExitCode() {

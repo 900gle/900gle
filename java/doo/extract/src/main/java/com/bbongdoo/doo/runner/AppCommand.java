@@ -23,10 +23,7 @@ public class AppCommand implements Callable<Integer>, IExitCodeExceptionMapper {
     Exclusive exclusive;
     @Parameters(index = "0", paramLabel = "Last Name", description = "value:[L]")
     private String lastName;
-    @Parameters(index = "1", paramLabel = "First Name", description = "value:[D]")
-    private String firstName;
-    @Parameters(index = "2", paramLabel = "Second Name", description = "value:[H]")
-    private String secondName;
+
 
     @Override
     public int getExitCode(Throwable exception) {
@@ -40,19 +37,10 @@ public class AppCommand implements Callable<Integer>, IExitCodeExceptionMapper {
     public Integer call() throws Exception {
 
         if (!lastName.equals("L")) {
-            System.out.println("H 가 아님");
+            System.out.println("L 가 아님");
             throw new IOException();
         }
 
-        if (!firstName.equals("D")) {
-            System.out.println("H 가 아님");
-            throw new IOException();
-        }
-
-        if (!secondName.equals("H")) {
-            System.out.println("H 가 아님");
-            throw new IOException();
-        }
         dynamicIndex.startDynamic();
 
         return ExitCode.OK;
@@ -63,10 +51,6 @@ public class AppCommand implements Callable<Integer>, IExitCodeExceptionMapper {
         @Option(names = {"-l", "--LastName"}, required = true, description = "last name value")
         private boolean isLastName;
 
-        @Option(names = {"-d", "--FirstName"}, required = true, description = "first name value")
-        private boolean isFirstName;
 
-        @Option(names = {"-h", "--SecondName"}, required = true, description = "second name value")
-        private boolean isSecondName;
     }
 }
