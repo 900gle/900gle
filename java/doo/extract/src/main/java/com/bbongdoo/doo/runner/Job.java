@@ -3,6 +3,8 @@ package com.bbongdoo.doo.runner;
 import com.bbongdoo.doo.service.IndexFileService;
 import lombok.RequiredArgsConstructor;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -19,6 +21,7 @@ public class Job {
 
         for(int i = 0; i < 10; i++){
             Runnable runnable = new Runnable() {
+                String indexTime = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
 
                 @Override
                 public void run() {
@@ -30,7 +33,7 @@ public class Job {
 
                     System.out.println("[총 스레드 개수:" + poolSize + "] 작업 스레드 이름: "+threadName);
 
-                    IndexFileService.createFile("/data/test_"+threadName+".txt");
+                    IndexFileService.createFile("/data/test_"+threadName+".txt", indexTime);
 
                     //일부로 예외 발생 시킴
 //                    int value = Integer.parseInt("예외");

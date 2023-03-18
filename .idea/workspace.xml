@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8f4dc8b-cf89-49ad-809a-1a5cbdfde21f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/config/AsyncConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/service/AsyncIndexService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/service/IndicesService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/common/src/main/java/com/bbongdoo/doo/domain/GoodsTextRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/common/src/main/java/com/bbongdoo/doo/domain/GoodsTextRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/runner/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/runner/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/AsyncTaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/AsyncTaskService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/DynamicIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/DynamicIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/IndexFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/extract/src/main/java/com/bbongdoo/doo/service/IndexFileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/cron/GoodsCron.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/cron/GoodsCron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/service/GoodsAsyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/doo/indexer/src/main/java/com/bbongdoo/doo/service/GoodsAsyncService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +57,7 @@
       <workItem from="1666448626811" duration="5000" />
       <workItem from="1668256417761" duration="178000" />
       <workItem from="1668949875830" duration="516000" />
+      <workItem from="1677309415428" duration="8000" />
     </task>
     <servers />
   </component>

@@ -16,40 +16,37 @@ import java.util.concurrent.Callable;
 @RequiredArgsConstructor
 public class AppCommand implements Callable<Integer>, IExitCodeExceptionMapper {
 
-
     private final DynamicIndex dynamicIndex;
 
-    @ArgGroup(exclusive = true, multiplicity = "3", validate = false)
+    @ArgGroup(exclusive = true, multiplicity = "1", validate = false)
     Exclusive exclusive;
-    @Parameters(index = "0", paramLabel = "Last Name", description = "value:[L]")
-    private String lastName;
+    @Parameters(index = "0", paramLabel = "indexer type", description = "indexer type [ STATIC | DYNAMIC ]")
+    private String type;
 
 
     @Override
     public int getExitCode(Throwable exception) {
-
         exception.printStackTrace();
         return 0;
     }
 
-
     @Override
     public Integer call() throws Exception {
-
-        if (!lastName.equals("L")) {
-            System.out.println("L 가 아님");
-            throw new IOException();
+        switch (type) {
+            case "S":
+                dynamicIndex.staticIndex();
+                break;
+            case "D":
+                dynamicIndex.dynamicIndex();
+                break;
         }
-
-        dynamicIndex.startDynamic();
-
         return ExitCode.OK;
     }
 
     static class Exclusive {
 
-        @Option(names = {"-l", "--LastName"}, required = true, description = "last name value")
-        private boolean isLastName;
+        @Option(names = {"-t", "--indexer type"}, required = true, description = "indexer type value")
+        private boolean isType;
 
 
     }

@@ -1,6 +1,7 @@
 package com.bbongdoo.doo.controller;
 
 
+import com.bbongdoo.doo.service.AsyncIndexService;
 import com.bbongdoo.doo.service.GoodsService;
 import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
@@ -15,12 +16,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class GoodsRestController {
 
-    private final GoodsService goodsService;
+    private final AsyncIndexService asyncIndexService;
 
     @CrossOrigin("*")
     @PostMapping("static/goods")
     public void staticIndex() {
-        goodsService.staticIndex();
+        asyncIndexService.staticIndex();
     }
 
 }

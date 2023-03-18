@@ -1,5 +1,6 @@
 package com.bbongdoo.doo.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedWriter;
@@ -9,34 +10,42 @@ import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+@Slf4j
 @Service
 public class IndexFileService {
 
-    public static boolean createFile(String path) {
+
+    public static boolean createDirectory(String path){
+
+        File folder = new File(path);
+        if (!folder.exists()) {
+            try{
+                folder.mkdirs(); //폴더 생성합니다.
+            }
+            catch(Exception e){
+                e.getStackTrace();
+            }
+        }else {
+            folder.delete();
+            folder.mkdirs(); //폴더 생성합니다.
+        }
+
+       return true;
+    }
+
+    public static boolean createFile(String path, String data) {
 
         File file = new File(path);
-
-        String indexTime = LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME);
-
         try {
 
-
             BufferedWriter writer = new BufferedWriter(new FileWriter(file));
-            writer.write(indexTime);
+            writer.write(data);
             writer.close();
 
             if (file.createNewFile()) {
                 System.out.println("File created");
             } else {
-
-                try {
-                    Thread.sleep(10000);
-
-                } catch (InterruptedException e) {
-                    e.getStackTrace();
-
-                }
-                System.out.println("File already exists");
+//                System.out.println("File already exists");
                 return false;
 
             }
