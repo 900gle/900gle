@@ -23,7 +23,7 @@
 ---
 
 ## - Architecture - [phase2](https://ldh-6019.tistory.com/132?category=1046444)
-[![phase4](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F5rFRL%2FbtrPp4ZbqvZ%2FnBTn1kdsvTzye38Lw2CdIk%2Fimg.png)](https://ldh-6019.tistory.com/132?category=1046444)
+[![phase4](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FoQCBK%2FbtsdgT1lXhO%2FX911wCdT0y5JLKx9EQgiQk%2Fimg.png)](https://ldh-6019.tistory.com/132?category=1046444)
 
 ## - Project directory structure
 
