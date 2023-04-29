@@ -42,6 +42,7 @@ common
 consumer  
 crawler  
 indexer  
+extract  
 libs  
 manage   
 producer  
@@ -114,12 +115,12 @@ docker compose -f kafka-full.yml up -d --build
         * [crawler - 검색 API](https://ldh-6019.tistory.com/category/900gle%20shopping/api) 
         * common - 공통파일        
         * [crawler - 웹사이트의 상품정보를 크롤링](https://ldh-6019.tistory.com/category/900gle%20shopping/crawler)    
-        * extract - 크롤링 후 데이터 파일 생성
+        * [extract - 크롤링 후 데이터 파일 생성](https://ldh-6019.tistory.com/category/900gle%20shopping/extract)
         * [indexer - DB의 내용을 ES에 색인](https://ldh-6019.tistory.com/category/900gle%20shopping/indexer) 
         * [libs - OpenCV lib 파일](https://ldh-6019.tistory.com/category/OpneCV)
         * [manage - Admin 에서 사용될 API (크롤링키워드관리)](https://ldh-6019.tistory.com/category/900gle%20shopping/manage)
-        * [producer - Kafka producer (카프카 정보 전송)](https://ldh-6019.tistory.com/category/900gle%20shopping/producer)
-        * [consumer - Kafka consumer (카프카 정보 소비)](https://ldh-6019.tistory.com/category/900gle%20shopping/consumer)
+        * [producer - Kafka producer (카프카 데이터 전송)](https://ldh-6019.tistory.com/category/900gle%20shopping/producer)
+        * [consumer - Kafka consumer (카프카 데이터 소비)](https://ldh-6019.tistory.com/category/900gle%20shopping/consumer)
         * [web - 900gle shopping 웹사이트](https://ldh-6019.tistory.com/category/900gle%20shopping/web)
      
  

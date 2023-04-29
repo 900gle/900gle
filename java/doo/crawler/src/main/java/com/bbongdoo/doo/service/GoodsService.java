@@ -2,6 +2,9 @@ package com.bbongdoo.doo.service;
 
 
 import com.bbongdoo.doo.annotation.Timer;
+import com.bbongdoo.doo.factory.NaverFactory;
+import com.bbongdoo.doo.component.Site;
+import com.bbongdoo.doo.factory.SiteFactory;
 import com.bbongdoo.doo.component.TextEmbedding;
 import com.bbongdoo.doo.domain.GoodsText;
 import com.bbongdoo.doo.domain.GoodsTextRepository;
@@ -33,17 +36,21 @@ public class GoodsService {
     @Timer
     public void getData(String type) {
 
+
+        Site site = new SiteFactory().getSite(new NaverFactory());
         List<Keywords> keywords = keywordsService.getData();
         keywords.stream().forEach(obj -> {
                     try {
                         int i = 0;
                         while (true) {
                             Thread.sleep(2000); //1초 대기
-                            String listUrl = HostUrl.NAVER.getUrl() + "?frm=NVSHATC&origQuery=" + obj.getKeyword() + "&pagingIndex=" + i + "&pagingSize=40&productSet=total&query=" + obj.getKeyword() + "&sort=rel&timestamp=&viewType=list";
+                            String listUrl = site.getUrl(obj.getKeyword(), i);
+
                             Document listDocument = Jsoup.connect(listUrl)
                                     .timeout(9000)
                                     .get();
-                            Elements list = listDocument.select("li.basicList_item__0T9JD");
+
+                            Elements list = listDocument.select("div.basicList_item__0T9JD");
                             list.stream().forEach(element -> {
                                 try {
                                     Elements title = element.select("div.basicList_title__VfX3c>a");
@@ -91,7 +98,6 @@ public class GoodsService {
 
                     }
 //
-
                     keywordsService.putData(obj);
                 }
         );
