@@ -112,7 +112,7 @@ docker compose -f kafka-full.yml up -d --build
 1. java : 900gle 프로젝트  
 * java
     * doo : Project root        
-        * [crawler - 검색 API](https://ldh-6019.tistory.com/category/900gle%20shopping/api) 
+        * [api - 검색 API](https://ldh-6019.tistory.com/category/900gle%20shopping/api) 
         * common - 공통파일        
         * [crawler - 웹사이트의 상품정보를 크롤링](https://ldh-6019.tistory.com/category/900gle%20shopping/crawler)    
         * [extract - 크롤링 후 데이터 파일 생성](https://ldh-6019.tistory.com/category/900gle%20shopping/extract)
