@@ -2,7 +2,7 @@
 [![Elastic Stack version](https://img.shields.io/badge/Elasticsearch-7.15.1-00bfb3?style=flat&logo=elastic-stack)]()
 [![Elastic Stack version](https://img.shields.io/badge/kibana-7.15.1-00bfb3?style=flat&logo=elastic-stack)]()
 [![Elastic Stack version](https://img.shields.io/badge/logstash-7.15.1-00bfb3?style=flat&logo=elastic-stack)]()
-
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2F900gle%2F900gle&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 ## What is 900gle shopping?
 백터의 유사도 검색을 활용한 쇼핑플랫폼 개인프로젝트  
 [개발잡부](https://ldh-6019.tistory.com)의 블로그의 내용을 구현 
