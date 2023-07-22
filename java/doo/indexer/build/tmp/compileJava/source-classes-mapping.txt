@@ -1,0 +1,60 @@
+com/bbongdoo/doo/service/SearchService.java
+ com.bbongdoo.doo.service.SearchService
+com/bbongdoo/doo/controller/AutoRestController.java
+ com.bbongdoo.doo.controller.AutoRestController
+com/bbongdoo/doo/config/AsyncConfig.java
+ com.bbongdoo.doo.config.AsyncConfig
+com/bbongdoo/doo/service/IndicesService.java
+ com.bbongdoo.doo.service.IndicesService
+com/bbongdoo/doo/controller/GoodsRestController.java
+ com.bbongdoo.doo.controller.GoodsRestController
+com/bbongdoo/doo/service/ExcutorService.java
+ com.bbongdoo.doo.service.ExcutorService
+ com.bbongdoo.doo.service.ExcutorService$1
+com/bbongdoo/doo/service/AsyncIndexService.java
+ com.bbongdoo.doo.service.AsyncIndexService
+com/bbongdoo/doo/service/CrawlerService.java
+ com.bbongdoo.doo.service.CrawlerService
+com/bbongdoo/doo/entities/Location.java
+ com.bbongdoo.doo.entities.Location
+com/bbongdoo/doo/cron/GoodsCron.java
+ com.bbongdoo.doo.cron.GoodsCron
+com/bbongdoo/doo/service/GoodsService.java
+ com.bbongdoo.doo.service.GoodsService
+com/bbongdoo/doo/domain/LocationsRepository.java
+ com.bbongdoo.doo.domain.LocationsRepository
+com/bbongdoo/doo/IndexerApplication.java
+ com.bbongdoo.doo.IndexerApplication
+com/bbongdoo/doo/cron/IndexCron.java
+ com.bbongdoo.doo.cron.IndexCron
+com/bbongdoo/doo/service/IndexService.java
+ com.bbongdoo.doo.service.IndexService
+com/bbongdoo/doo/config/SwaggerConfig.java
+ com.bbongdoo.doo.config.SwaggerConfig
+com/bbongdoo/doo/domain/Locations.java
+ com.bbongdoo.doo.domain.Locations
+ com.bbongdoo.doo.domain.Locations$LocationsBuilder
+com/bbongdoo/doo/service/FileService.java
+ com.bbongdoo.doo.service.FileService
+com/bbongdoo/doo/controller/ProductsRestController.java
+ com.bbongdoo.doo.controller.ProductsRestController
+com/bbongdoo/doo/service/IndexerService.java
+ com.bbongdoo.doo.service.IndexerService
+com/bbongdoo/doo/entities/Shop.java
+ com.bbongdoo.doo.entities.Shop
+com/bbongdoo/doo/service/ProductsService.java
+ com.bbongdoo.doo.service.ProductsService
+com/bbongdoo/doo/service/AutoService.java
+ com.bbongdoo.doo.service.AutoService
+com/bbongdoo/doo/service/LocationService.java
+ com.bbongdoo.doo.service.LocationService
+com/bbongdoo/doo/service/GoodsAsyncService.java
+ com.bbongdoo.doo.service.GoodsAsyncService
+com/bbongdoo/doo/utils/FileUtils.java
+ com.bbongdoo.doo.utils.FileUtils
+com/bbongdoo/doo/service/TestService.java
+ com.bbongdoo.doo.service.TestService
+com/bbongdoo/doo/service/Work.java
+ com.bbongdoo.doo.service.Work
+com/bbongdoo/doo/service/DocumentBulkService.java
+ com.bbongdoo.doo.service.DocumentBulkService

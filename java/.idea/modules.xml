@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/api/doo.api.main.iml" filepath="$PROJECT_DIR$/.idea/modules/api/doo.api.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/doo.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/doo.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/consumer/doo.consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/consumer/doo.consumer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/crawler/doo.crawler.main.iml" filepath="$PROJECT_DIR$/.idea/modules/crawler/doo.crawler.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/extract/doo.extract.main.iml" filepath="$PROJECT_DIR$/.idea/modules/extract/doo.extract.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/indexer/doo.indexer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/indexer/doo.indexer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/manage/doo.manage.main.iml" filepath="$PROJECT_DIR$/.idea/modules/manage/doo.manage.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/producer/doo.producer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/producer/doo.producer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/doo.web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/web/doo.web.main.iml" />
+    </modules>
+  </component>
+</project>
