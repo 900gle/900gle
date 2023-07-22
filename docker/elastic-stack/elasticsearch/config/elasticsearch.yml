@@ -10,6 +10,10 @@ network.host: 0.0.0.0
 #
 xpack.security.authc.api_key.enabled: true
 
-xpack.license.self_generated.type: basic
+xpack.license.self_generated.type: trial
+#xpack.license.self_generated.type: basic
 xpack.security.enabled: true
 xpack.monitoring.collection.enabled: true
+
+
+

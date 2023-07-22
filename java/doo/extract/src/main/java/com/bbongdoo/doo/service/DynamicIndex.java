@@ -35,7 +35,7 @@ public class DynamicIndex {
 
         long count = goodsTextRepository.count();
         int chunk = 500;
-        double endPage = Math.ceil(count /chunk);
+        double endPage = Math.ceil(count / chunk);
 
         for (int i = 0; i < endPage +1; i++) {
 
