@@ -2,14 +2,14 @@ package com.bbongdoo.doo.service;
 
 
 import com.bbongdoo.doo.annotation.Timer;
-import com.bbongdoo.doo.factory.NaverFactory;
 import com.bbongdoo.doo.component.Site;
-import com.bbongdoo.doo.factory.SiteFactory;
 import com.bbongdoo.doo.component.TextEmbedding;
 import com.bbongdoo.doo.domain.GoodsText;
 import com.bbongdoo.doo.domain.GoodsTextRepository;
 import com.bbongdoo.doo.domain.Keywords;
 import com.bbongdoo.doo.dto.TextEmbeddingDTO;
+import com.bbongdoo.doo.factory.NaverFactory;
+import com.bbongdoo.doo.factory.SiteFactory;
 import com.bbongdoo.doo.info.HostUrl;
 import lombok.RequiredArgsConstructor;
 import org.jsoup.Jsoup;
@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
-public class GoodsService {
+public class CrawlerTest {
 
     private final GoodsTextRepository goodsRepository;
     private final KeywordsService keywordsService;
@@ -35,7 +35,6 @@ public class GoodsService {
 
     @Timer
     public void getData(String type) {
-
 
         Site site = new SiteFactory().getSite(new NaverFactory());
         List<Keywords> keywords = keywordsService.getData();
@@ -46,32 +45,19 @@ public class GoodsService {
                             Thread.sleep(2000); //1초 대기
                             String listUrl = site.getUrl(obj.getKeyword(), i);
 
-                             System.out.println(listUrl);
-
                             Document listDocument = Jsoup.connect(listUrl)
                                     .timeout(9000)
                                     .get();
 
-
-
-
-
-                            Elements list = listDocument.select("div.adProduct_inner__W_nuz");
-
-
-
-
+                            Elements list = listDocument.select("div.basicList_item__0T9JD");
                             list.stream().forEach(element -> {
                                 try {
-                                    Elements title = element.select("div.adProduct_title__amInq>a");
-                                    Elements price = element.select("strong.adProduct_price__9gODs>span>span.price_num__S2p_v");
-                                    Elements category = element.select("div.adProduct_depth__s_IUT span");
+                                    Elements title = element.select("div.basicList_title__VfX3c>a");
+                                    Elements price = element.select("strong.basicList_price__euNoD>span>span.price_num__S2p_v");
+                                    Elements category = element.select("div.basicList_depth__SbZWF span");
                                     List<String> categoryLists = category.stream().map(x -> x.text()).collect(Collectors.toList());
 
                                     Elements image = element.select("a.thumbnail_thumb__Bxb6Z > img");
-
-                                    System.out.println(image.attr("src"));
-
                                     Thread.sleep(1000);
 
                                     goodsRepository.save(GoodsText.builder()
@@ -110,7 +96,7 @@ public class GoodsService {
                     } catch (InterruptedException i) {
 
                     }
-//
+
                     keywordsService.putData(obj);
                 }
         );

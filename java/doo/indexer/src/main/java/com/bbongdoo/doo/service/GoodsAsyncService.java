@@ -51,7 +51,7 @@ public class GoodsAsyncService {
 
     private LocalDateTime updatedTime;
 
-    private String PREFIX = "test_sync";
+    private String PREFIX = "goods";
 
 
     @Async("executor")

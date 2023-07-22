@@ -36,7 +36,7 @@ public class AsyncIndexService {
     private final SearchService searchService;
 
     private List<CompletableFuture<Integer>> completableFutures = new ArrayList<>();
-    private String ALIAS = "test_sync";
+    private String ALIAS = "goods";
 
 
     public void staticIndex() {
