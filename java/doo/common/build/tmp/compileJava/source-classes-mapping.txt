@@ -1,0 +1,130 @@
+com/bbongdoo/doo/advice/exception/CNotOwnerException.java
+ com.bbongdoo.doo.advice.exception.CNotOwnerException
+com/bbongdoo/doo/dto/VectorDTO.java
+ com.bbongdoo.doo.dto.VectorDTO
+ com.bbongdoo.doo.dto.VectorDTO$VectorDTOBuilder
+com/bbongdoo/doo/domain/Goods.java
+ com.bbongdoo.doo.domain.Goods
+ com.bbongdoo.doo.domain.Goods$GoodsBuilder
+com/bbongdoo/doo/base/core/config/CrawlerConfig.java
+ com.bbongdoo.doo.base.core.config.CrawlerConfig
+com/bbongdoo/doo/advice/exception/CResourceNotExistException.java
+ com.bbongdoo.doo.advice.exception.CResourceNotExistException
+com/bbongdoo/doo/base/enums/SiteType.java
+ com.bbongdoo.doo.base.enums.SiteType
+com/bbongdoo/doo/dto/TextEmbeddingDTO.java
+ com.bbongdoo.doo.dto.TextEmbeddingDTO
+ com.bbongdoo.doo.dto.TextEmbeddingDTO$TextEmbeddingDTOBuilder
+com/bbongdoo/doo/base/enums/StoreType.java
+ com.bbongdoo.doo.base.enums.StoreType
+com/bbongdoo/doo/advice/exception/CUserNotFoundException.java
+ com.bbongdoo.doo.advice.exception.CUserNotFoundException
+com/bbongdoo/doo/base/enums/SearchServiceCode.java
+ com.bbongdoo.doo.base.enums.SearchServiceCode
+com/bbongdoo/doo/apis/IndexApi.java
+ com.bbongdoo.doo.apis.IndexApi
+com/bbongdoo/doo/base/enums/DiscountPhrases.java
+ com.bbongdoo.doo.base.enums.DiscountPhrases
+com/bbongdoo/doo/model/response/CommonResult.java
+ com.bbongdoo.doo.model.response.CommonResult
+com/bbongdoo/doo/base/enums/UseType.java
+ com.bbongdoo.doo.base.enums.UseType
+com/bbongdoo/doo/component/ImageToVectorOpenCV.java
+ com.bbongdoo.doo.component.ImageToVectorOpenCV
+com/bbongdoo/doo/utils/ParseVector.java
+ com.bbongdoo.doo.utils.ParseVector
+com/bbongdoo/doo/advice/exception/CEmailSigninFailedException.java
+ com.bbongdoo.doo.advice.exception.CEmailSigninFailedException
+com/bbongdoo/doo/advice/exception/CUserExistException.java
+ com.bbongdoo.doo.advice.exception.CUserExistException
+com/bbongdoo/doo/info/HostUrl.java
+ com.bbongdoo.doo.info.HostUrl
+com/bbongdoo/doo/base/core/config/CrawlerItemProperties.java
+ com.bbongdoo.doo.base.core.config.CrawlerItemProperties
+com/bbongdoo/doo/base/core/config/CrawlerProperties.java
+ com.bbongdoo.doo.base.core.config.CrawlerProperties
+com/bbongdoo/doo/domain/ProductsRepository.java
+ com.bbongdoo.doo.domain.ProductsRepository
+com/bbongdoo/doo/dto/ImageSearchDTO.java
+ com.bbongdoo.doo.dto.ImageSearchDTO
+ com.bbongdoo.doo.dto.ImageSearchDTO$ImageSearchDTOBuilder
+com/bbongdoo/doo/model/response/ListResult.java
+ com.bbongdoo.doo.model.response.ListResult
+com/bbongdoo/doo/advice/exception/CAuthenticationEntryPointException.java
+ com.bbongdoo.doo.advice.exception.CAuthenticationEntryPointException
+com/bbongdoo/doo/dto/GoodTextDTO.java
+ com.bbongdoo.doo.dto.GoodTextDTO
+com/bbongdoo/doo/advice/ExceptionAdvice.java
+ com.bbongdoo.doo.advice.ExceptionAdvice
+com/bbongdoo/doo/annotation/Timer.java
+ com.bbongdoo.doo.annotation.Timer
+com/bbongdoo/doo/utils/FileUtil.java
+ com.bbongdoo.doo.utils.FileUtil
+com/bbongdoo/doo/domain/UsersRepository.java
+ com.bbongdoo.doo.domain.UsersRepository
+com/bbongdoo/doo/base/enums/ItemType.java
+ com.bbongdoo.doo.base.enums.ItemType
+com/bbongdoo/doo/apis/IndexLocationApi.java
+ com.bbongdoo.doo.apis.IndexLocationApi
+com/bbongdoo/doo/aspect/TimerAop.java
+ com.bbongdoo.doo.aspect.TimerAop
+com/bbongdoo/doo/sample/ImageSIFTOpenCV.java
+ com.bbongdoo.doo.sample.ImageSIFTOpenCV
+com/bbongdoo/doo/component/TextEmbedding.java
+ com.bbongdoo.doo.component.TextEmbedding
+com/bbongdoo/doo/domain/Users.java
+ com.bbongdoo.doo.domain.Users
+ com.bbongdoo.doo.domain.Users$UsersBuilder
+com/bbongdoo/doo/domain/GoodsTextRepository.java
+ com.bbongdoo.doo.domain.GoodsTextRepository
+com/bbongdoo/doo/model/response/RestApiResponse.java
+ com.bbongdoo.doo.model.response.RestApiResponse
+com/bbongdoo/doo/service/ResponseService.java
+ com.bbongdoo.doo.service.ResponseService
+ com.bbongdoo.doo.service.ResponseService$CommonResponse
+com/bbongdoo/doo/model/response/SingleResult.java
+ com.bbongdoo.doo.model.response.SingleResult
+com/bbongdoo/doo/domain/Keywords.java
+ com.bbongdoo.doo.domain.Keywords
+ com.bbongdoo.doo.domain.Keywords$KeywordsBuilder
+com/bbongdoo/doo/base/enums/ShipKind.java
+ com.bbongdoo.doo.base.enums.ShipKind
+com/bbongdoo/doo/config/Client.java
+ com.bbongdoo.doo.config.Client
+ com.bbongdoo.doo.config.Client$1
+com/bbongdoo/doo/base/utils/DateUtils.java
+ com.bbongdoo.doo.base.utils.DateUtils
+com/bbongdoo/doo/apis/IndexAutoApi.java
+ com.bbongdoo.doo.apis.IndexAutoApi
+com/bbongdoo/doo/domain/KeywordsRepository.java
+ com.bbongdoo.doo.domain.KeywordsRepository
+com/bbongdoo/doo/dto/ExtractGoodsTextDTO.java
+ com.bbongdoo.doo.dto.ExtractGoodsTextDTO
+ com.bbongdoo.doo.dto.ExtractGoodsTextDTO$ExtractGoodsTextDTOBuilder
+com/bbongdoo/doo/base/enums/IndexAlias.java
+ com.bbongdoo.doo.base.enums.IndexAlias
+com/bbongdoo/doo/domain/GoodsText.java
+ com.bbongdoo.doo.domain.GoodsText
+ com.bbongdoo.doo.domain.GoodsText$GoodsTextBuilder
+com/bbongdoo/doo/base/core/exception/CustomAsyncExceptionHandler.java
+ com.bbongdoo.doo.base.core.exception.CustomAsyncExceptionHandler
+com/bbongdoo/doo/base/enums/ShipMethod.java
+ com.bbongdoo.doo.base.enums.ShipMethod
+com/bbongdoo/doo/base/core/exception/ValidationException.java
+ com.bbongdoo.doo.base.core.exception.ValidationException
+ com.bbongdoo.doo.base.core.exception.ValidationException$ValidationErrCode
+com/bbongdoo/doo/domain/GoodsRepository.java
+ com.bbongdoo.doo.domain.GoodsRepository
+com/bbongdoo/doo/component/SendRestUtil.java
+ com.bbongdoo.doo.component.SendRestUtil
+com/bbongdoo/doo/advice/exception/CCommunicationException.java
+ com.bbongdoo.doo.advice.exception.CCommunicationException
+com/bbongdoo/doo/base/enums/StoreKind.java
+ com.bbongdoo.doo.base.enums.StoreKind
+com/bbongdoo/doo/domain/BaseTimeEntity.java
+ com.bbongdoo.doo.domain.BaseTimeEntity
+com/bbongdoo/doo/domain/Products.java
+ com.bbongdoo.doo.domain.Products
+ com.bbongdoo.doo.domain.Products$ProductsBuilder
+com/bbongdoo/doo/apis/IndexGoodsApi.java
+ com.bbongdoo.doo.apis.IndexGoodsApi
