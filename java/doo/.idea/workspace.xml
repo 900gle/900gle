@@ -1,9 +1,251 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b2034666-3b9a-408e-a71d-6cc703ad1036" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build/libs/common-0.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/libs/common-0.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/IndexerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/config/AsyncConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/config/SwaggerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/AutoRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/GoodsRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/ProductsRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/cron/GoodsCron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/cron/IndexCron.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/Locations$LocationsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/Locations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/LocationsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/entities/Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/entities/Shop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/AsyncIndexService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/AutoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/CrawlerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/DocumentBulkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ExcutorService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ExcutorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/FileService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/GoodsAsyncService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/GoodsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndexService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndexerService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndicesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/LocationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ProductsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/SearchService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/TestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/Work.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/utils/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application-local.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2TZUxLkQDgfACGINbiVuQgA9Qya" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/doo/project/900gle/java/doo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e3e85a518f194cbaea5addddf4187f4b&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle clean" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ExtractApplication">
+    <configuration name="doo [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.ApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.consumer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.ConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrawlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.crawler.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.CrawlerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExtractApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.extract.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.ExtractApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndexerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.indexer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.IndexerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.manage.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.ManageApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.producer.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.ProducerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="doo.web.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.WebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.doo [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2034666-3b9a-408e-a71d-6cc703ad1036" name="Changes" comment="" />
+      <created>1691250341794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691250341794</updated>
+      <workItem from="1691250342843" duration="109000" />
+      <workItem from="1691297159100" duration="243000" />
+      <workItem from="1691297413244" duration="673000" />
+      <workItem from="1691300286077" duration="272000" />
+      <workItem from="1691300566983" duration="480000" />
+      <workItem from="1691301056244" duration="683000" />
+      <workItem from="1691303132410" duration="2371000" />
+      <workItem from="1691856778406" duration="81000" />
+      <workItem from="1691857207332" duration="1737000" />
+      <workItem from="1691861081357" duration="596000" />
+      <workItem from="1691888143690" duration="597000" />
+      <workItem from="1692066596173" duration="2089000" />
+      <workItem from="1692189020622" duration="1189000" />
+      <workItem from="1692273169969" duration="1136000" />
+      <workItem from="1692275442566" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
