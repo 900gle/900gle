@@ -34,7 +34,7 @@ public class AsyncTaskService {
         int start = i * chunk;
         int end = (i + 1) * chunk;
 
-        PageRequest pageRequest = PageRequest.of(start, chunk);
+        PageRequest pageRequest = PageRequest.of(i, chunk);
         Page<GoodsText> goodsTexts = goodsTextRepository.findAllByOrderByIdAsc(pageRequest);
         List<ExtractGoodsTextDTO> extractGoodsTextDTOList = new ArrayList<>();
 
@@ -54,7 +54,7 @@ public class AsyncTaskService {
                                     .category4(x.getCategory4())
                                     .category5(x.getCategory5())
                                     .image(x.getImage())
-//                                    .featureVector(x.getFeatureVector())
+                                    .featureVector(x.getFeatureVector())
                                     .weight(x.getWeight())
                                     .popular(x.getPopular())
                                     .type(x.getType())
@@ -76,7 +76,6 @@ public class AsyncTaskService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
         return CompletableFuture.supplyAsync(goodsTexts::getSize);
     }

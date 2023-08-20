@@ -9,52 +9,22 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/libs/common-0.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/libs/common-0.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/IndexerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/config/AsyncConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/AutoRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/GoodsRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/ProductsRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/cron/GoodsCron.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/cron/IndexCron.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/Locations$LocationsBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/Locations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/LocationsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/entities/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/entities/Shop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/AsyncIndexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/AutoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/CrawlerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/DocumentBulkService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ExcutorService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ExcutorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/FileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/GoodsAsyncService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndexerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndicesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/LocationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ProductsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/SearchService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/TestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/Work.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/utils/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application-local.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/component/Naver.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/component/Naver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/component/Site.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/component/Site.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/factory/SiteFactoryInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/factory/SiteFactoryInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/runner/AppCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/runner/AppCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/service/CrawlerSeleniumService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/service/CrawlerSeleniumService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/service/CrawlerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/java/com/bbongdoo/doo/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/extract/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +73,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;8.8.1&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/doo/project/900gle/java/doo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -173,6 +143,7 @@
     </configuration>
     <configuration name="CrawlerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="doo.crawler.main" />
+      <option name="PROGRAM_PARAMETERS" value="-t T" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.CrawlerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,6 +151,7 @@
     </configuration>
     <configuration name="ExtractApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="doo.extract.main" />
+      <option name="PROGRAM_PARAMETERS" value="-t S" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bbongdoo.doo.ExtractApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -213,6 +185,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.doo [clean]" />
+      <item itemvalue="Spring Boot.ApiApplication" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.CrawlerApplication" />
+      <item itemvalue="Spring Boot.ExtractApplication" />
+      <item itemvalue="Spring Boot.IndexerApplication" />
+      <item itemvalue="Spring Boot.ManageApplication" />
+      <item itemvalue="Spring Boot.ProducerApplication" />
+      <item itemvalue="Spring Boot.WebApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.doo [clean]" />
@@ -242,6 +225,8 @@
       <workItem from="1692189020622" duration="1189000" />
       <workItem from="1692273169969" duration="1136000" />
       <workItem from="1692275442566" duration="13000" />
+      <workItem from="1692505485033" duration="2343000" />
+      <workItem from="1692529194701" duration="390000" />
     </task>
     <servers />
   </component>

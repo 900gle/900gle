@@ -66,13 +66,10 @@ public class CrawlerSeleniumService {
 
             String key = keys.getKeyword();
             String listUrl = "https://search.shopping.naver.com/search/all?frm=NVSHATC&origQuery=" + key + "&pagingIndex=" + i + "&pagingSize=40&productSet=total&query=" + key + "&sort=rel&timestamp=&viewType=list";
-
             // 웹페이지 요청
             driver.get(listUrl);
 
-
             try {
-
                 Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.getStackTrace();

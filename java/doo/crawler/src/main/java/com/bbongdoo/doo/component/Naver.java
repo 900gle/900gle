@@ -20,7 +20,4 @@ public class Naver extends Site {
                 .queryParam("viewType", "list")
                 .build().toString();
     }
-
-
-
 }

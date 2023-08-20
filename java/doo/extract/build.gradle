@@ -8,8 +8,8 @@ dependencies {
     implementation group: 'info.picocli', name: 'picocli-spring-boot-starter', version: '4.6.3'
 
 
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+//    compileOnly 'org.projectlombok:lombok'
+//    annotationProcessor 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')

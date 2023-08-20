@@ -25,7 +25,6 @@ public class AppCommand implements Callable<Integer>, IExitCodeExceptionMapper {
     @Parameters(index = "0", paramLabel = "crawler type", description = "value:[ I | T ]")
     private String type;
 
-
     @Override
     public int getExitCode(Throwable exception) {
         exception.printStackTrace();

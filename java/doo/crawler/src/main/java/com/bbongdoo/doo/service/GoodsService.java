@@ -36,7 +36,6 @@ public class GoodsService {
     @Timer
     public void getData(String type) {
 
-
         Site site = new SiteFactory().getSite(new NaverFactory());
         List<Keywords> keywords = keywordsService.getData();
         keywords.stream().forEach(obj -> {
@@ -52,15 +51,7 @@ public class GoodsService {
                                     .timeout(9000)
                                     .get();
 
-
-
-
-
                             Elements list = listDocument.select("div.adProduct_inner__W_nuz");
-
-
-
-
                             list.stream().forEach(element -> {
                                 try {
                                     Elements title = element.select("div.adProduct_title__amInq>a");
@@ -108,9 +99,8 @@ public class GoodsService {
                     } catch (IOException e) {
                         e.printStackTrace();
                     } catch (InterruptedException i) {
-
+                        i.printStackTrace();
                     }
-//
                     keywordsService.putData(obj);
                 }
         );
