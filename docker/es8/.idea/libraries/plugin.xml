@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="plugin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/elasticsearch/plugin/kr-danalyzer-8.8.1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/elasticsearch/plugin/900gle-plugin-8.8.1.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

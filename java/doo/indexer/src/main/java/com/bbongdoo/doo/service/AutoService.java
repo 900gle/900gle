@@ -134,7 +134,6 @@ public class AutoService {
 
             } else {
 
-
                 IndicesAliasesRequest.AliasActions aliasActionsAdd = new IndicesAliasesRequest.AliasActions(IndicesAliasesRequest.AliasActions.Type.ADD)
                         .index(indexName)
                         .alias(PREFIX);

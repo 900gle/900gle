@@ -4,58 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b2034666-3b9a-408e-a71d-6cc703ad1036" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.8.3/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build/libs/common-0.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/common/build/libs/common-0.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/IndexerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/config/AsyncConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/config/SwaggerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/AutoRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/GoodsRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/controller/ProductsRestController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/cron/GoodsCron.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/cron/IndexCron.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/Locations$LocationsBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/Locations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/domain/LocationsRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/entities/Location.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/entities/Shop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/AsyncIndexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/AutoService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/CrawlerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/DocumentBulkService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ExcutorService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ExcutorService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/FileService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/GoodsAsyncService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndexerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/IndicesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/LocationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/ProductsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/SearchService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/TestService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/service/Work.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/classes/java/main/com/bbongdoo/doo/utils/FileUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application-local.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/resources/main/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="b2034666-3b9a-408e-a71d-6cc703ad1036" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -242,6 +191,7 @@
       <workItem from="1692189020622" duration="1189000" />
       <workItem from="1692273169969" duration="1136000" />
       <workItem from="1692275442566" duration="13000" />
+      <workItem from="1692429818202" duration="14000" />
     </task>
     <servers />
   </component>
