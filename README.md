@@ -134,6 +134,9 @@ Usage
 #900gle 가상환경 실행
 $ conda activate 900gle
 
+#가상환경 종료
+$ conda deactivate 
+
 #text embedding api 실행
 $ python app/api.py
  ``` 
