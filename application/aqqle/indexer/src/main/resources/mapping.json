@@ -1,0 +1,77 @@
+{
+  "properties": {
+    "brand": {
+      "type": "keyword"
+    },
+    "category": {
+      "type": "text"
+    },
+    "category1": {
+      "type": "keyword"
+    },
+    "category2": {
+      "type": "keyword"
+    },
+    "category3": {
+      "type": "keyword"
+    },
+    "category4": {
+      "type": "keyword"
+    },
+    "category5": {
+      "type": "keyword"
+    },
+    "created_time": {
+      "type": "date",
+      "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_hour_minute_second_millis||strict_date_optional_time"
+    },
+    "id": {
+      "type": "long"
+    },
+    "image": {
+      "type": "text"
+    },
+    "feature_vector": {
+      "type": "dense_vector",
+      "dims": 512
+    },
+    "keyword": {
+      "type": "keyword"
+    },
+    "name": {
+      "type": "text",
+      "fields": {
+        "chosung": {
+          "type": "text",
+          "analyzer": "chosung-analyzer"
+        },
+        "jamo": {
+          "type": "text",
+          "analyzer": "jamo-analyzer"
+        },
+        "nori": {
+          "type": "text",
+          "analyzer": "doo-nori-analyzer"
+        }
+      }
+    },
+    "popular": {
+      "type": "integer",
+      "null_value": 1
+    },
+    "price": {
+      "type": "long"
+    },
+    "type": {
+      "type": "keyword"
+    },
+    "updated_time": {
+      "type": "date",
+      "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_hour_minute_second_millis||strict_date_optional_time"
+    },
+    "weight": {
+      "type": "float"
+    }
+  }
+}
+

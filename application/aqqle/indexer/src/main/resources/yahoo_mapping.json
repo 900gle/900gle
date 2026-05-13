@@ -1,0 +1,36 @@
+{
+  "properties": {
+    "id": {
+      "type": "double"
+    },
+    "company": {
+      "type": "keyword"
+    },
+    "companyCode": {
+      "type": "keyword"
+    },
+    "tradingDate": {
+      "type": "date",
+      "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_hour_minute_second_millis||strict_date_optional_time"
+    },
+    "open": {
+      "type": "double"
+    },
+    "high": {
+      "type": "double"
+    },
+    "low": {
+      "type": "double"
+    },
+    "close": {
+      "type": "double"
+    },
+    "adjClose": {
+      "type": "double"
+    },
+    "volume": {
+      "type": "double"
+    }
+  }
+}
+

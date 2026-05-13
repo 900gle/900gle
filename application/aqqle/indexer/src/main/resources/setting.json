@@ -1,0 +1,84 @@
+{
+  "number_of_shards": "3",
+  "analysis": {
+    "filter": {
+      "doo-stop-filter": {
+        "type": "stop",
+        "stopwords_path": "stopFilter.txt"
+      },
+      "doo-synonym-filter": {
+        "type": "synonym",
+        "synonyms_path": "synonymsFilter.txt"
+      },
+      "doo-nori-posfilter": {
+        "type": "nori_part_of_speech",
+        "stoptaags": [
+          "E",
+          "IC",
+          "J",
+          "MAG",
+          "MM",
+          "NA",
+          "NR",
+          "SC",
+          "SE",
+          "SF",
+          "SH",
+          "SL",
+          "SN",
+          "SP",
+          "SSC",
+          "SSO",
+          "SY",
+          "UNA",
+          "UNKNOWN",
+          "VA",
+          "VCN",
+          "VCP",
+          "VSV",
+          "VV",
+          "VX",
+          "XPN",
+          "XR",
+          "XSA",
+          "XSN",
+          "XSV"
+        ]
+      }
+    },
+    "analyzer": {
+      "doo-nori-analyzer": {
+        "filter": [
+          "doo-nori-posfilter",
+          "nori_readingform",
+          "doo-synonym-filter",
+          "doo-stop-filter"
+        ],
+        "type": "custom",
+        "tokenizer": "doo-nori-tokenizer"
+      },
+      "chosung-analyzer": {
+        "filter": [
+          "doo-chosung"
+        ],
+        "type": "custom",
+        "tokenizer": "standard"
+      },
+      "jamo-analyzer": {
+        "filter": [
+          "doo-jamo"
+        ],
+        "type": "custom",
+        "tokenizer": "standard"
+      }
+    },
+    "tokenizer": {
+      "doo-nori-tokenizer": {
+        "type": "nori_tokenizer",
+        "user_dictionary": "user_dictionary.txt",
+        "decompound_mode": "mixed"
+      }
+    }
+  },
+  "number_of_replicas": "0"
+}

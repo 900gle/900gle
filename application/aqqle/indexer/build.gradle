@@ -1,0 +1,69 @@
+bootJar {
+    enabled = false;
+}
+jar {
+    enabled = true;
+}
+//def elasticsearchVersion = '8.0.0'
+
+dependencies {
+    implementation project(':common')
+    // https://mvnrepository.com/artifact/io.github.mightguy/symspell-lib
+    implementation group: 'io.github.mightguy', name: 'symspell-lib', version: '6.6.154'
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    // implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    // runtimeOnly 'mysql:mysql-connector-java'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    // picocli
+    // https://mvnrepository.com/artifact/info.picocli/picocli-spring-boot-starter
+    implementation group: 'info.picocli', name: 'picocli-spring-boot-starter', version: '4.7.4'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor
+    implementation group: 'org.springframework.boot', name: 'spring-boot-configuration-processor', version: '3.1.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+
+
+
+    // https://mvnrepository.com/artifact/co.elastic.clients/elasticsearch-java
+    implementation group: 'co.elastic.clients', name: 'elasticsearch-java', version: '8.8.1'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.3'
+// https://mvnrepository.com/artifact/jakarta.json/jakarta.json-api
+    implementation group: 'jakarta.json', name: 'jakarta.json-api', version: '2.1.2'
+
+
+
+
+
+//    // https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-high-level-client
+    implementation group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '7.17.4'
+//    // https://mvnrepository.com/artifact/org.elasticsearch.client/elasticsearch-rest-client
+//    implementation group: 'org.elasticsearch.client', name: 'elasticsearch-rest-client', version: '8.8.1'
+//    // https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch
+//    implementation group: 'org.elasticsearch', name: 'elasticsearch', version: '8.8.1'
+//    compile('org.springframework.boot:spring-boot-starter-web')
+//    testCompile('org.springframework.boot:spring-boot-starter-test')
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'mysql:mysql-connector-java'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    // https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
+    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.2.5.RELEASE'
+
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    runtimeOnly 'com.h2database:h2'
+//    compile('org.springframework.boot:spring-boot-starter-web')
+
+//    testCompile('org.springframework.boot:spring-boot-starter-test')
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'mysql:mysql-connector-java'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+    // https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
+//    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.2.5.RELEASE'
+}

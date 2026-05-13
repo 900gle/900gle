@@ -1,0 +1,2 @@
+rootProject.name = 'aqqle'
+include 'base','common', 'indexer', 'extract', 'api', 'crawler', 'manage', 'web', 'producer', 'consumer'

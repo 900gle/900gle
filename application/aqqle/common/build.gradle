@@ -1,0 +1,34 @@
+bootJar { enabled = false }
+jar { enabled = true }
+
+dependencies {
+
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+    implementation 'io.springfox:springfox-swagger2:2.5.0'
+
+    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+    implementation 'io.springfox:springfox-swagger-ui:2.5.0'
+
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+
+    // picocli
+    // https://mvnrepository.com/artifact/info.picocli/picocli-spring-boot-starter
+    implementation group: 'info.picocli', name: 'picocli-spring-boot-starter', version: '4.7.4'
+
+
+// https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
+//    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '3.1.0'
+
+// https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api
+    implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+
+//    api 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'com.h2database:h2'
+
+
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+
+}

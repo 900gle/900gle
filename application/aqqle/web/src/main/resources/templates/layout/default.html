@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<!-- Head -->
+<head>
+  <div th:replace="fragments/title::title"></div>
+  <th:block layout:fragment="css" class="css" ></th:block>
+</head>
+<!-- / .Head -->
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center" id = "admin_lte_logo" >
+    <img class="animation__shake" src="/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <div th:replace="fragments/navbar::navbar"></div>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <div th:replace="fragments/aside::aside"></div>
+  <!-- / .Main Sidebar Container -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div layout:fragment="content" class="content"></div>
+
+  <!-- /.content-wrapper -->
+  <!-- footer -->
+  <div th:replace="fragments/footer::footer"></div>
+  <!-- footer -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<div th:replace="fragments/script::script"></div>
+<th:block layout:fragment="page_script" class="page_script"></th:block>
+</body>
+</html>

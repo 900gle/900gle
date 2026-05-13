@@ -1,0 +1,117 @@
+version: '3.7'
+
+services:
+  setup:
+    container_name: aqqle_setup
+    build:
+      context: setup/
+      args:
+        ELASTIC_VERSION: ${ELASTIC_VERSION}
+    init: true
+    volumes:
+      - setup:/state:Z
+    environment:
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD:-}
+      KIBANA_SYSTEM_PASSWORD: ${KIBANA_SYSTEM_PASSWORD:-}
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch1
+      - elasticsearch2
+#      - elasticsearch3
+
+  elasticsearch1:
+    container_name: aqqle_es1
+    build:
+      context: elasticsearch/
+      args:
+        ELASTIC_VERSION: ${ELASTIC_VERSION}
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro,z
+      - ./elasticsearch:/usr/share/elasticsearch/data:z
+    ports:
+      - "9200:9200"
+    environment:
+      - cluster.name=docker-cluster
+      - node.name=aqqle_es1
+      - discovery.seed_hosts=aqqle_es1,aqqle_es2
+      - cluster.initial_master_nodes=aqqle_es1,aqqle_es2
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-}"
+
+    networks:
+      - elk
+
+  elasticsearch2:
+    container_name: aqqle_es2
+    build:
+      context: elasticsearch/
+      args:
+        ELASTIC_VERSION: ${ELASTIC_VERSION}
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro,z
+      - ./elasticsearch:/usr/share/elasticsearch/data:z
+    ports:
+      - "9201:9200"
+    environment:
+      - cluster.name=docker-cluster
+      - node.name=aqqle_es2
+      - discovery.seed_hosts=aqqle_es1,aqqle_es2
+      - cluster.initial_master_nodes=aqqle_es1,aqqle_es2
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-}"
+
+    networks:
+      - elk
+
+#  elasticsearch3:
+#    container_name: aqqle_es3
+#    build:
+#      context: elasticsearch/
+#      args:
+#        ELASTIC_VERSION: ${ELASTIC_VERSION}
+#    volumes:
+#      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro,z
+#      - ./elasticsearch:/usr/share/elasticsearch/data/aqqle:z
+#    ports:
+#      - "9202:9200"
+#      - "9302:9300"
+#    environment:
+#      - cluster.name=docker-cluster
+#      - node.name=aqqle_es3
+#      - discovery.seed_hosts=aqqle_es1,aqqle_es2,aqqle_es3
+#      - cluster.initial_master_nodes=aqqle_es1,aqqle_es2,aqqle_es3
+#      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+#      - "ELASTIC_PASSWORD=${ELASTIC_PASSWORD:-}"
+
+#    networks:
+#      - elk
+
+#  kibana:
+#    container_name: "aqqle_kibana"
+#    build:
+#      context: kibana/
+#      args:
+#        ELASTIC_VERSION: ${ELASTIC_VERSION}
+#    volumes:
+#      - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro,Z
+#    ports:
+#      - "5601:5601"
+#    environment:
+#      KIBANA_SYSTEM_PASSWORD: ${KIBANA_SYSTEM_PASSWORD:-}
+#    networks:
+#      - elk
+#    depends_on:
+#      - elasticsearch1
+#      - elasticsearch2
+#      - elasticsearch3
+#
+networks:
+  elk:
+    driver: bridge
+#
+volumes:
+  setup:
+  elasticsearch:

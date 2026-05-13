@@ -1,0 +1,40 @@
+dependencies {
+
+    implementation project(':common')
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+//
+//
+//    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
+//    implementation 'io.springfox:springfox-swagger2:2.5.0'
+//
+//    // https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
+//    implementation 'io.springfox:springfox-swagger-ui:2.5.0'
+
+
+    // picocli
+    // https://mvnrepository.com/artifact/info.picocli/picocli-spring-boot-starter
+    implementation group: 'info.picocli', name: 'picocli-spring-boot-starter', version: '4.7.4'
+
+
+
+    runtimeOnly 'com.h2database:h2'
+    compileOnly('org.springframework.boot:spring-boot-starter-web')
+    compileOnly('org.springframework.boot:spring-boot-starter-test')
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'mysql:mysql-connector-java'
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    /* kafka */
+    implementation 'org.springframework.kafka:spring-kafka'
+    // https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa
+
+//    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+//    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.4'
+
+
+    compileOnly group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.2.5.RELEASE'
+
+}
